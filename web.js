@@ -3,7 +3,8 @@ var app = express();
 app.use(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('Hello World! from web.js');
+  /*response.send('Hello World! from web.js');i*/
+  response.render("index.html");
 });
 
 var port = process.env.PORT || 5000;
